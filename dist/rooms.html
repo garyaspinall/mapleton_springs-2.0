@@ -11,6 +11,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
+    <script src="carousel.js"></script>
   </head>
   <body>
     <header class="bg-lime py-8 font-sans text-2xl text-white">
@@ -107,12 +108,27 @@
 
     <main class="text-center text-green1 text-xl italic py-5">
       <h2>Mapleton Springs King Suite in building away from main residence.</h2>
-      <div class="h-40 bg-lime max-w-40 m-auto">IMAGE</div>
+      <ol id="carouselParent" class="flex justify-center">
+        <li>
+          <div class="h-40 bg-lime max-w-40">IMAGE1</div></li>
+       
+        <li>
+          <div class="h-40 bg-lime max-w-40 hidden">IMAGE2</div>
+        </li>
+        <li>
+          <div class="h-40 bg-lime max-w-40 hidden">IMAGE3</div>
+        </li>
+        <li>
+          <div class="h-40 bg-lime max-w-40 hidden">IMAGE4</div>
+        </li>
+      </ol>
       <h2>
         Mapleton Springs King Suite with Spa Bath attached to main residence
         with separate entry.
       </h2>
-      <div class="h-40 bg-lime max-w-40 m-auto">IMAGE</div>
+      <div class="flex justify-center">
+        <div id="image" class="h-40 bg-lime max-w-40">IMAGE</div>
+      </div>
     </main>
 
     <footer class="flex justify-around bg-lime py-3 text-center text-white">
