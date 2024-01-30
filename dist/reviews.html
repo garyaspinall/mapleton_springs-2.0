@@ -11,163 +11,17 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
+    <script src="./includeHTML.js"></script>
   </head>
   <body>
-    <header class="bg-lime py-8 font-sans text-2xl text-white">
-      <div class="p flex justify-evenly font-bold">
-        <a
-          class="rounded-xl bg-green1 px-5"
-          href="https://book-directonline.com/properties/mapletonspringsdirect"
-          >Book Now</a
-        >
-        <a
-          class="rounded-xl bg-green1 px-5"
-          href="https://book-directonline.com/properties/mapletonspringsdirect"
-          >Check Availability</a
-        >
-      </div>
-      <nav>
-        <ol class="flex flex-wrap justify-center italic">
-          <li>
-            <a href="index.html">
-              <div class="p-3">
-                <h1>Home</h1>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="rooms.html">
-              <div>
-                <h1 class="p-3">Rooms</h1>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="facilities.html">
-              <div>
-                <h1 class="p-3">Facilities</h1>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="eats.html">
-              <div>
-                <h1 class="p-3">Eats</h1>
-                <div class="hidden">
-                  <h1>Breakfast Options Locally</h1>
-                  <h1>Restaurants</h1>
-                  <h1>Snacks</h1>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="reviews.html">
-              <div>
-                <h1 class="p-3">Reviews</h1>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="faqs.html">
-              <div>
-                <h1 class="p-3">FAQs</h1>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="things-to-do.html">
-              <div>
-                <h1 class="p-3">Things to Do</h1>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="gift-vouchers.html">
-              <div>
-                <h1 class="p-3">Gift Vouchers</h1>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="about-us.html">
-              <div>
-                <h1 class="p-3">About</h1>
-              </div>
-            </a>
-          </li>
-          <li>
-            <div>
-              <h1 class="p-3">More</h1>
-            </div>
-          </li>
-        </ol>
-      </nav>
-    </header>
+    <header id="header">Loading</header>
+    <script>includeHTML("header.html", "header")</script>
 
     <main>
       Reviews
     </main>
 
-    <footer class="flex justify-around bg-lime py-3 text-center text-white">
-      <div class="max-w-96">
-        <h1 class="text-xl italic">Contact</h1>
-        <p>mapletonsprings@bigpond.com</p>
-        <p>87 Spring Pastures Drive, Mapleton, QLD 4560</p>
-        <form class="text-left">
-          <div class="flex space-x-3">
-            <div>
-              <label for="name">Enter your name</label><br />
-              <input class="text-green1" type="text" id="name" />
-            </div>
-            <div>
-              <label for="email">Enter your email</label><br />
-              <input class="text-green1" type="text" id="email" />
-            </div>
-          </div>
-          <div>
-            <label for="subject">Enter your subject</label><br />
-            <input class="w-full text-green1" type="text" id="subject" /><br />
-          </div>
-          <div>
-            <label for="message">Enter your message</label><br />
-            <textarea
-              class="h-24 w-full text-green1"
-              type="text"
-              id="message"
-            ></textarea>
-          </div>
-          <input
-            type="submit"
-            value="Submit"
-            class="rounded-xl bg-green1 px-5"
-          />
-        </form>
-      </div>
-      <div class="max-w-56">
-        <h1 class="text-2xl italic">Mapleton Springs</h1>
-        <br />
-        <div class="flex justify-center">
-          <img class="h-10" src="../assets/ig_icon.webp" />
-          <img class="h-10" src="../assets/fb_icon.png" />
-        </div>
-      </div>
-      <div class="max-w-56">
-        <ol>
-          <li>
-            <a>Call (7am-8pm) +07 5445 7751</a>
-          </li>
-          <li>
-            <a>mapletonsprings@bigpond.com</a>
-          </li>
-          <li>
-            <a>Gift Voucher</a>
-          </li>
-          <li>
-            <a>FAQs</a>
-          </li>
-        </ol>
-      </div>
-    </footer>
+    <footer id="footer"></footer>
+    <script>includeHTML("footer.html", "footer")</script>
   </body>
 </html>
